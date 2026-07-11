@@ -19,6 +19,17 @@ getSchemeBtn.addEventListener("click", function(){
                 const hexValue = data.colors[index].hex.value;                
                 box.style.backgroundColor = hexValue;
                 colorCodes[index].textContent = hexValue;
+
+                //Copy to clipboard functionality
+                box.addEventListener("click", function() {
+                    navigator.clipboard.writeText(hexValue)
+                        .then(() => {
+                            alert(`Copied ${hexValue} to clipboard!`);
+                        })
+                        .catch(err => {
+                            console.error('Failed to copy: ', err);
+                        });
+                })
             })
         })
 })

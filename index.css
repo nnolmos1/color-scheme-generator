@@ -10,6 +10,7 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     font-size: 2.35rem;
+    margin-top: 2em;
     letter-spacing: 0.05em;
     font-family: "Google Sans Code", sans-serif;
 }
@@ -24,8 +25,9 @@ h2{
 }
 
 .text-container {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin: 2em auto;
+    max-width: 550px;
+    width: 80%;
 }
 
 .container {
@@ -36,7 +38,7 @@ h2{
     background-color: #1F2937;
 
     margin: 0 auto;
-    margin-top: 3em;
+    margin: 3em auto;
 }
 
 .top-section {
@@ -52,7 +54,7 @@ h2{
 #scheme-options {
     display: flex;
     width: 56%;
-    padding: 0 8px;
+    padding: 0 0.5em;
 }
 
 #color-picker, #scheme-options, #get-scheme-btn {
@@ -92,9 +94,13 @@ h2{
     color: #D5D4D8;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 35px;
+}
+
+.color-code {
+    width: 110px;        
+    text-align: center;  
+    margin: 0;         
 }
 
 .color-box {

@@ -1,16 +1,42 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #1C1C1C
+    background-color: #1C1C1C;
+    font-family: "Google Sans Code", sans-serif;
+}
+
+h1 {
+    color: #D5D4D8;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.35rem;
+    letter-spacing: 0.05em;
+    font-family: "Google Sans Code", sans-serif;
+}
+
+h2{
+    color: #D5D4D8;
+    text-align: center;
+    font-size: 0.95rem;
+    font-style: italic;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+}
+
+.text-container {
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .container {
-    height: 550px;
-    width: 550px;
+    max-width: 550px;
+    max-height: 550px;
+    height: 100%;
+    width: 90%;
     background-color: #1F2937;
 
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 3em;
 }
 
 .top-section {
@@ -19,15 +45,74 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 20px;
+    gap: 8px;
+}
 
+#scheme-options {
+    display: flex;
+    width: 56%;
+    padding: 0 8px;
+}
+
+#color-picker, #scheme-options, #get-scheme-btn {
+    height: 40px;
+    background-color: #1F2937;
+    border: 1px solid #D5D4D8;
+    border-radius: 6px;
+    color: #D5D4D8;
+    font-size: 0.75rem;
+    font-family: "Google Sans Code", sans-serif;
+
+}
+
+#get-scheme-btn {
+    padding: 0 10px;
+    background-color: #3D4B60;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#get-scheme-btn:hover {
+    background-color: #D5D4D8;
+    color: #1F2937;
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .middle-section {
     height: 414px;
-    background-color: white;
+    background-color: #D5D4D8;
+    display: flex;
 }
 
 .bottom-section {
     height: 46px;
+    font-size: 0.85rem;
+    color: #D5D4D8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+}
+
+.color-box {
+    width: 110px;
+    height: 414px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }

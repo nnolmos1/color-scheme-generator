@@ -1,14 +1,31 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Scheme Generator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-
+        <div class="text-container"> 
+        <h1> Color Scheme Generator </h1>
+        <h2> Generate beautiful color schemes, from the click of a button.</h2>
+        </div>
         <div class="container"> 
 
-            <div class="top-section">
-                <input type="color" id=""colorPicker" name="colorPicker" value="#ffffff">
-                <select id="options" name="options">
+            <header class="top-section">
+                <label for="color-picker" class="sr-only">Choose Seed Color</label>
+                <input type="color" id="color-picker" name="color-picker" value="#2e57a8">
+
+                <label for="scheme-options" class="sr-only">Choose Scheme Mode</label>
+                <select id="scheme-options" name="options">
                     <option value="Monochrome">Monochrome</option>
                     <option value="Monochrome-dark" selected>Monochrome-dark</option>
                     <option value="Monochrome-light">Monochrome-light</option>
@@ -17,15 +34,33 @@
                     <option value="Analogic-complement">Analogic-complement</option>
                     <option value="Triad">Triad</option>
                 </select>
-                <button id="getSchemeBtn">Get Color Scheme</button>
-            </div>
+                <button id="get-scheme-btn">Get Color Scheme</button>
+            </header>
 
-            <div class="middle-section">
+            <main class="middle-section">
+                <div class="color-box" id="color-box-1">
 
-            </div>
+                </div>
+                <div class="color-box" id="color-box-2">
+                    
+                </div>
+                <div class="color-box" id="color-box-3">
+                    
+                </div>
+                <div class="color-box" id="color-box-4">
+                    
+                </div>
+                <div class="color-box" id="color-box-5">
+                    
+                </div>
+            </main>
 
             <div class="bottom-section">
-
+                 <p class="color-code" id="color-code-1">#FFFFFF</p>
+                 <p class="color-code" id="color-code-2">#FFFFFF</p>
+                 <p class="color-code" id="color-code-3">#FFFFFF</p>
+                 <p class="color-code" id="color-code-4">#FFFFFF</p>
+                 <p class="color-code" id="color-code-5">#FFFFFF</p>
             </div>
 
         </div>

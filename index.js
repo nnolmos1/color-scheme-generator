@@ -20,7 +20,7 @@ getSchemeBtn.addEventListener("click", function(){
                 box.style.backgroundColor = hexValue;
                 colorCodes[index].textContent = hexValue;
 
-                //Copy to clipboard functionality
+                //Copy to clipboard functionality - NOTE: broken on mobile/safari 
                 box.addEventListener("click", function() {
                     navigator.clipboard.writeText(hexValue)
                         .then(() => {
